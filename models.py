@@ -124,14 +124,14 @@ class BiLSTM:
 
         """Builds the model.
         Args:
-            embedding_matrix: Embedding matrix.
-            layer_1_units: Number of units in the first LSTM layer.
-            layer_2_units: Number of units in the second LSTM layer.
-            dropout_rate: Dropout rate.
-            recurrent_dropout_rate: Recurrent dropout rate.
-            trainable: Whether to make the embedding layer trainable.
-            regularization_factor: Regularization factor for the LSTM layers.
-            activation: Activation function for the second last layer.
+            embedding_matrix (numpy.ndarray, optional): A pre-trained embedding matrix.
+            layer_1_units (int): Number of units in the first LSTM layer.
+            layer_2_units (int): Number of units in the second LSTM layer.
+            dropout_rate (float): Dropout rate.
+            recurrent_dropout_rate (float): Recurrent dropout rate.
+            trainable (bool): Whether to make the embedding layer trainable.
+            regularization_factor (float): Regularization factor for the LSTM layers.
+            activation (str): Activation function for the second last layer.
 
         Returns:
             tensorflow.keras.Model: A BiLSTM-based text classification model.
